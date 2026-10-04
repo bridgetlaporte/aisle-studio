@@ -124,6 +124,11 @@
             <h2>Feeling lucky?</h2>
             <p>Choose a number between 1–10. If your number matches ours, you win a complimentary planning consultation with one of our experts!</p>
 
+            <form>
+                <label for="guess">Pick your lucky number</label>
+                <input type="number" id="guess" name="guess" min="1" max="10">
+                <button type="submit">Check Your Luck</button>
+            </form>
         </section>
 
 
@@ -135,6 +140,33 @@
             
             <!-- Image source: my own personal photo -->
             <img src="images/contact.jpg" alt="A box offered to a couple by a wedding planner at the wedding consultation with the words 'Lets make this official' on the box">
+
+            <form>
+                <h3>Wedding Inquiry</h3>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+
+                    <input type="radio" id="contactEmail" name="contactMethod" value="email">
+                    <label for="contactEmail">Email</label>
+                    <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                    <label for="contactPhone">Phone</label>     
+                </fieldset>
+
+                <label for="comments">Tell us about your day.</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+
+                <button type="submit">Submit Inquiry</button>
+
+            </form>
         </section>
 
     </main>
