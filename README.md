@@ -46,6 +46,10 @@ This section will be updated throughout development to document changes I made a
 ### Day 2
 - Organized images folder and renamed files for page section clarity.
 - Reviewed the materials for assignment clarity and adjusted html content to feel more like a real page. 
+- Added services switch content to html 
+- Added images to page 
+- Added the from markup to the html, will be adjusted later for effectiveness. 
+- Validated HTML
 
 ### Day 3
 
