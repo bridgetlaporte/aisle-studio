@@ -39,9 +39,13 @@ This section will be updated throughout development to document changes I made a
 
 ### Day 1
 
-- Day 1 development notes will be added at the end of the first work day.
+- Implemented file setup, github, organized materials based on previously created figma wireframe/mockup.
+- Created initial HTML code for the page. 
+- Gathered page materials and adjusted wireframe to match assignment requirements. 
 
 ### Day 2
+- Organized images folder and renamed files for page section clarity.
+- Reviewed the materials for assignment clarity and adjusted html content to feel more like a real page. 
 
 ### Day 3
 
