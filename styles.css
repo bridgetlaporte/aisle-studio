@@ -179,11 +179,63 @@ section{
 /* -------------------- HEADER -------------------- */
 
 header{
-    padding: 24px var(--page-padding);
+    padding: 0 var(--page-padding);
     background-color: var(--background-color);
     border-bottom: 1px solid var(--border-color);
+    height: 88px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;  
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-self: start;
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.logo img{
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+}
+
+header nav{
+    justify-self: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+header nav a{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* dark theme toggle */
+#themeToggle{
+    width: 206px;
+    height: 46px;
+    padding: 0 20px;
+    justify-self: end;
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    background-color: var(--cream);
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
 /* -------------------- HOME -------------------- */
 

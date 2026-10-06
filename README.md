@@ -50,8 +50,10 @@ This section will be updated throughout development to document changes I made a
 - Added images to page 
 - Added the from markup to the html, will be adjusted later for effectiveness. 
 - Validated HTML
+- Created initial structure for css and added reset 
 
 ### Day 3
+- added css styles to the header navigation 
 
 ## Debugging Log
 
