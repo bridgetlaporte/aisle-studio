@@ -56,7 +56,14 @@ This section will be updated throughout development to document changes I made a
 - added css styles to the header navigation
 - Added css styles to the home section with supporting html markup 
 - Added css styles to the about section with supporting html markup
+- Added css styles to the services section with html markup
+
+## Day 4
+- Started JS file for services switch
+- continued css for services section 
 
 ## Debugging Log
+
+
 
 - Debugging entries will be added as real problems are encountered during development.
