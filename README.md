@@ -61,6 +61,10 @@ This section will be updated throughout development to document changes I made a
 ## Day 4
 - Started JS file for services switch
 - continued css for services section 
+- Added transition for hovering buttons
+- Added css and updated html for the number game 'luck section' 
+- Added css and html for contact section and form
+- Added css and adjusted html markup for the footer 
 
 ## Debugging Log
 

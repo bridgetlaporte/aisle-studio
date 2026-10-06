@@ -168,7 +168,7 @@ textarea{
     resize: vertical;
 }
 
-/*  all page sections layout */
+/*  all sections layout */
 section{
     padding: 90px var(--page-padding);
 }
@@ -375,7 +375,6 @@ header nav a{
 
 
 /* Service buttons */
-
 .service-buttons{
     display: flex;
     gap: 12px;
@@ -453,30 +452,279 @@ header nav a{
 /* -------------------- LUCKY DRAW -------------------- */
 
 #lucky-draw{
+    min-height: 500px;
+    padding: 70px var(--page-padding);
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 80px;
+    align-items: center;
     background-color: var(--accent-color);
     color: var(--ivory);
 }
 
-#lucky-draw h2, #lucky-draw p {
+.lucky-content{
+    max-width: 460px;
+}
+
+.lucky-label{
+    margin-bottom: 12px;
     color: var(--ivory);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#lucky-draw h2{
+    margin-bottom: 20px;
+    color: var(--ivory);
+}
+
+#lucky-draw p{
+    color: var(--ivory);
+}
+
+.lucky-content > p:last-child{
+    margin-bottom: 0;
+    color: var(--ivory);
+    line-height: 1.5;
+}
+
+/* whte card */
+.lucky-card{
+    padding: 40px;
+    background-color: var(--ivory);
+    color: var(--text-color);
+}
+
+.lucky-card label{
+    display: block;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.lucky-card input{
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border-color);
+    background-color: var(--ivory);
+    color: var(--text-color);
+}
+
+/* check luck button */
+.lucky-card button{
+    width: 100%;
+    padding: 14px 24px;
+    background-color: var(--charcoal);
+    color: var(--ivory);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.lucky-card button:hover{
+    background-color: var(--accent-color);
 }
 
 
 /* -------------------- CONTACT -------------------- */
 
 #contact{
+    padding: 70px var(--page-padding);
     background-color: var(--background-color);
+}
+
+/* heading */
+.contact-label{
+    margin-bottom: 12px;
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#contact h2{
+    margin-bottom: 16px;
+}
+
+.contact-intro{
+    max-width: 700px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.contact-layout{
+    display: grid;
+    grid-template-columns: 430px 1fr;
+    gap: 60px;
+    align-items: stretch;
+}
+
+.contact-image{
+    width: 430px;
+    height: 650px;
+    object-fit: cover;
+}
+
+
+/* form */
+.contact-form{
+    padding: 40px;
+    background-color: var(--secondary-background);
+}
+
+.contact-form h3{
+    margin-bottom: 28px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label, .contact-form legend{
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+/* side by side */
+.form-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* Text field */
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"], .contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    background-color: var(--ivory);
+    color: var(--text-color);
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"]{
+    height: 46px;
+}
+
+.contact-form textarea{
+    min-height: 120px;
+}
+
+
+/* Preferred contact */
+.contact-form fieldset{
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+}
+
+.radio-options{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-options label{
+    margin-right: 20px;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+
+/* Submit */
+.contact-form button{
+    width: 100%;
+    padding: 14px 24px;
+    background-color: var(--accent-color);
+    color: var(--ivory);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover{
+    background-color: var(--charcoal);
 }
 
 
 /* -------------------- FOOTER -------------------- */
 
+/* -------------------- FOOTER -------------------- */
+
 footer{
-    padding: 64px var(--page-padding);
+    padding: 50px var(--page-padding) 30px;
     background-color: var(--charcoal);
     color: var(--ivory);
 }
 
 footer p, footer a{
     color: var(--ivory);
+}
+
+
+/* Footer top  */
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
+}
+
+.footer-brand > p:first-child{
+    margin-bottom: 8px;
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-brand > p:last-child{
+    margin-bottom: 0;
+    color: var(--beige);
+}
+
+/* Footer nav */
+footer nav ul{
+    display: flex;
+    gap: 28px;
+    padding: 0;
+    list-style: none;
+}
+
+footer nav a{
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+footer nav a:hover{
+    color: var(--beige);
+    text-decoration: none;
+}
+
+
+/* Footer bottom */
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid var(--lt-olive);
+}
+
+.footer-bottom p{
+    margin-bottom: 0;
+    color: var(--beige);
+    font-size: 12px;
 }
