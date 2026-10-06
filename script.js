@@ -23,3 +23,19 @@ for (let i = 0; i < serviceButtons.length; i++) {
     });
 }
 
+
+
+
+// Changes the page to dark mode for theme button 
+let themeToggle = document.getElementById("themeToggle");
+themeToggle.addEventListener("click", function(){
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")){
+        themeToggle.textContent = "Light Mode";
+    }
+    else{
+        themeToggle.textContent = "Dark Mode";
+    }
+});
+
+

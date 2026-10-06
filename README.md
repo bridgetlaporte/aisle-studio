@@ -58,16 +58,30 @@ This section will be updated throughout development to document changes I made a
 - Added css styles to the about section with supporting html markup
 - Added css styles to the services section with html markup
 
-## Day 4
+### Day 4
 - Started JS file for services switch
 - continued css for services section 
 - Added transition for hovering buttons
 - Added css and updated html for the number game 'luck section' 
 - Added css and html for contact section and form
 - Added css and adjusted html markup for the footer 
+- Completed light mode css - now onto dark mode 
+- Added to css colors in root and adjusted page colors
+- Added js light and dark mode 
+- Validated and fixed errors 
+- Refined spacing, typography, images, buttons, hover states, and the footer
+- Tested the site at 1280px and checked the browser console for errors
 
 ## Debugging Log
 
+### Debugging Problem 1: Lucky Draw Grid Layout
+- The Lucky Draw heading, description, and form were appearing wrong despite my column setup seeming correct.
 
+### What I tried
+- I first adjusted the CSS Grid layout and spacing, but the page continued to display incorrectly. 
 
-- Debugging entries will be added as real problems are encountered during development.
+### What fixed it
+- I inspected the HTML with a W3 check and found that the lucky-content div was closed immediately after it opened and there for not processing. This left the heading and paragraphs outside of the wrapper. I deleted the extra closing div.
+
+### WhaT I learned  
+- Sometimes a layout that appears to be a CSS problem can be caused by the HTML, it is worth checking both before playing with the css.

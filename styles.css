@@ -12,13 +12,6 @@
   margin: 0;
 }
 
-/* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
-}
-
 body {
   /* 4. Increase line-height */
   line-height: 1.5;
@@ -88,10 +81,22 @@ h1, h2, h3, h4, h5, h6 {
     --text-color: var(--charcoal);
     --accent-color: var(--olive);
     --border-color: var(--beige);
+    --muted-text-color: var(--lt-olive);
+    --field-background: var(--ivory);
+    --field-text-color: var(--charcoal);
 
     /* page settings */
     --page-width: 1280px;
     --page-padding: 64px;
+}
+
+/* dark mode theme */
+body.dark-mode{
+    --background-color: var(--charcoal);
+    --secondary-background: #302f2a;
+    --text-color: var(--ivory);
+    --border-color: #55544d;
+    --muted-text-color: var(--beige);
 }
 
 
@@ -136,7 +141,7 @@ h3{
 
 p{
     margin-bottom: 20px;
-    color: var(--lt-olive);
+    color: var(--muted-text-color);
     font-size: 14px;
 }
 
@@ -160,8 +165,8 @@ button{
 /* forms */
 input, textarea{
     border: 1px solid var(--border-color);
-    background-color: var(--ivory);
-    color: var(--text-color);
+    background-color: var(--field-background);
+    color: var(--field-text-color);
 }
 
 textarea{
@@ -232,11 +237,17 @@ header nav a{
     justify-self: end;
     border: 1px solid var(--border-color);
     border-radius: 24px;
-    background-color: var(--cream);
+    background-color: var(--secondary-background);
     color: var(--text-color);
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+#themeToggle:hover{
+    background-color: var(--accent-color);
+    color: var(--ivory);
 }
 
 /* -------------------- HOME -------------------- */
@@ -441,7 +452,7 @@ header nav a{
 
 .service-content ul{
     padding-left: 18px;
-    color: var(--lt-olive);
+    color: var(--muted-text-color);
 }
 
 .service-content li{
@@ -489,17 +500,17 @@ header nav a{
     line-height: 1.5;
 }
 
-/* whte card */
+/* whitecard */
 .lucky-card{
     padding: 40px;
-    background-color: var(--ivory);
-    color: var(--text-color);
+    background-color: var(--field-background);
+    color: var(--field-text-color);
 }
 
 .lucky-card label{
     display: block;
     margin-bottom: 10px;
-    color: var(--text-color);
+    color: var(--field-text-color);
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -511,8 +522,8 @@ header nav a{
     padding: 12px;
     margin-bottom: 16px;
     border: 1px solid var(--border-color);
-    background-color: var(--ivory);
-    color: var(--text-color);
+    background-color: var(--field-background);
+    color: var(--field-text-color);
 }
 
 /* check luck button */
@@ -609,8 +620,8 @@ header nav a{
     width: 100%;
     padding: 12px;
     border: 1px solid var(--border-color);
-    background-color: var(--ivory);
-    color: var(--text-color);
+    background-color: var(--field-background);
+    color: var(--field-text-color);
 }
 
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"]{
@@ -658,8 +669,6 @@ header nav a{
     background-color: var(--charcoal);
 }
 
-
-/* -------------------- FOOTER -------------------- */
 
 /* -------------------- FOOTER -------------------- */
 
