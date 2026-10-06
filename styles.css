@@ -105,6 +105,7 @@ body{
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--font-body);
+    font-size: 14px;
 }
 
 img{
@@ -119,23 +120,24 @@ h1, h2, h3{
 }
 
 h1{
-    font-size: 78px;
+    font-size: 52px;
     line-height: 1.05;
 }
 
 h2{
-    font-size: 54px;
+    font-size: 38px;
     line-height: 1.1;
 }
 
 h3{
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1.2;
 }
 
 p{
     margin-bottom: 20px;
     color: var(--lt-olive);
+    font-size: 14px;
 }
 
 /* links and buttons */
@@ -194,7 +196,7 @@ header{
     gap: 14px;
     justify-self: start;
     font-family: var(--font-heading);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -239,15 +241,107 @@ header nav a{
 
 /* -------------------- HOME -------------------- */
 
+
 #home{
+    min-height: 700px;
+    padding: 70px var(--page-padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
     background-color: var(--background-color);
+}
+
+.hero-content{
+    max-width: 500px;
+}
+
+.hero-label{
+    margin-bottom: 24px;
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#home h1{
+    max-width: 480px;
+    margin-bottom: 24px;
+}
+
+.hero-description{
+    max-width: 420px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.primary-button{
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 28px;
+    background-color: var(--accent-color);
+    color: var(--ivory);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.primary-button:hover{
+    text-decoration: none;
+}
+
+.hero-location{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.hero-image{
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
 }
 
 
 /* -------------------- ABOUT -------------------- */
 
 #about{
+    padding: 70px var(--page-padding);
     background-color: var(--secondary-background);
+}
+
+.about-layout{
+    display: grid;
+    grid-template-columns: 455px 1fr;
+    gap: 75px;
+    align-items: center;
+}
+
+.about-layout img{
+    width: 455px;
+    height: 470px;
+    object-fit: cover;
+}
+
+.about-content{
+    max-width: 500px;
+}
+
+.about-label{
+    margin-bottom: 12px;
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#about h2{
+    margin-bottom: 20px;
+}
+
+.about-content p:not(.about-label){
+    margin-bottom: 18px;
+    line-height: 1.6;
 }
 
 

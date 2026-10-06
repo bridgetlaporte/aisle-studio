@@ -53,7 +53,9 @@ This section will be updated throughout development to document changes I made a
 - Created initial structure for css and added reset 
 
 ### Day 3
-- added css styles to the header navigation 
+- added css styles to the header navigation
+- Added css styles to the home section with supporting html markup 
+- Added css styles to the about section with supporting html markup
 
 ## Debugging Log
 
