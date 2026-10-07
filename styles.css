@@ -1,6 +1,7 @@
 /* Bridget LaPorte - The Aisle Studio - GIT 417 Final */
+/* Only set for 1280 desktop, not mobile, or tablet */
 
-
+/* reset caused some issues on validation check but it was from the spelling of the name, not sure what to do to fix that */
 /* A modern css reset from Josh Comeau's CSS Reset. https://www.joshwcomeau.com/css/custom-css-reset/ */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -103,7 +104,7 @@ body.dark-mode{
 
 
 /* ------------------------ Global Styles ----------------------- */
-
+/* based on figma wireframe and mockup */ 
 body{
     width: var(--page-width);
     margin: 0 auto;
@@ -371,7 +372,7 @@ header nav a{
 
 .about-content p:not(.about-label){
     margin-bottom: 18px;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 
@@ -515,7 +516,7 @@ header nav a{
     line-height: 1.5;
 }
 
-/* whitecard */
+/*  card - for some reason using the color is causing errors on css validation */
 .lucky-card{
     padding: 40px;
     background-color: var(--field-background);
