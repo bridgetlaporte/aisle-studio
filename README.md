@@ -16,23 +16,27 @@ ChatGPT
 - I used ChatGPT to help review the project requirements and rubric for details, organize my project schedule for daily workload plans, and debugging. 
 - I used it to help me debug parts of my code, especially for the lucky draw game and the contact form validation to understand errors and bugs. Using my textbook sections as the intiial guide, chatGPT was able to quickly discover the issues causing the bugs.
 - It also suggested small changes to my existing html and css code that better supported the js or styling issues, topical problems.  
+- Used it to check the files for errors once completed to final check anything I may have missed.
+
 
 ### Parts of the Project Affected
-- So far, AI has influenced my project schedule planning, workflow organization and generation of checklist for completion, and the interpretation of the assignment requirements. 
-- The main parts of the assignment affected were the 
-- The sections, content, colors, and font of the page were designed in figma and written by me. AI was used to debugged and review code for fixes.
+- So far, AI has influenced my project schedule planning, workflow organization and generation of checklist for completion, and the interpretation of the assignment requirements. Created a plan of action and order of operations to ensure I felt confident in what I needed to do from start to finish. 
+- The main parts that would be affected would be formatting help, and naming of sections. AI was helpful in checking the code, suggesting clear names for markup and proper formatting where applicable. Used primarily as a checking tool for bugs and organization throughout the process. 
+- The sections, content, colors, and font of the page were designed in figma and written by me before coding began. AI was used to debugged and review code for fixes. Helpful for discovering issues I could not quickly see on my own or could not be found with w3. 
 
 ### Amount of Final Code Influenced by AI
 - Chat influenced a limited amount of the code but made meaningful changes. Primarily for the bugs in the lucky draw, both for layout early on and the display errors as I worked on the js. It also helped to address areas of change to existing html and css to simplify js code development. 
-- The html, css, and js were of my own development, any code offered by AI was compared to class code along, textbook materials,lectures, and labs.  
+- The html, css, and js were of my own development, any code offered by AI was compared to class code alongs in codepen, textbook materials,lectures, and labs.  
+- Formatting and naming styles were influenced for clarity across the sections.  
 
 ### How I Tested and Verified the Work
 - I tested the site in the chrome browser using the dev tools, manually tested each interactive feature and button for the game, switch, and form. W3 was used to validate the HTML and CSS. 
 - Each feature was tested separately in chrome and checked for errors. 
+- Verified the code as I went outside of AI through w3 checks and constant edits. 
 
 ### Changes and Revisions I Made
 - After receiving suggested solutions from ChatGPT, I reviewed the code against my own, the course materials, and the rubric before adding the changes to my code. 
-- I also made sure I understood the code from the class materials as well as suggestions from AI as I coded the project to make sure I understood the importance of each part of the js, explaining how I understand its importance and function in the code. 
+- I also made sure I understood the code from the class materials as well as suggestions from AI as I coded the project to make sure I understood the importance of each part of the js, explaining how I understand its importance and function in the code.
 
 
 
@@ -41,45 +45,53 @@ ChatGPT
 
 ### Day 1
 
+- (Day 1 is the first day of coding, wireframes and mockup were created in the days prior, see behance for those)
 - Implemented file setup, github, organized materials based on previously created figma wireframe/mockup.
 - Created initial HTML code for the page. 
 - Gathered page materials and adjusted wireframe to match assignment requirements. 
 
 ### Day 2
-- Organized images folder and renamed files for page section clarity.
+- Organized images folder and renamed image files for page section clarity.
 - Reviewed the materials for assignment clarity and adjusted html content to feel more like a real page. 
-- Added services switch content to html 
-- Added images to page 
+- Added services switch content to html.
+- Added images to page.
 - Added the from markup to the html, will be adjusted later for effectiveness. 
-- Validated HTML
-- Created initial structure for css and added reset 
+- Validated HTML.
+- Created initial structure for css and added reset. 
 
 ### Day 3
-- added css styles to the header navigation
-- Added css styles to the home section with supporting html markup 
-- Added css styles to the about section with supporting html markup
-- Added css styles to the services section with html markup
+- added css styles to the header navigation.
+- Added css styles to the home section with supporting html markup. 
+- Added css styles to the about section with supporting html markup.
+- Added css styles to the services section with html markup.
 
 ### Day 4
-- Started JS file for services switch
-- continued css for services section 
-- Added transition for hovering buttons
-- Added css and updated html for the number game 'luck section' 
-- Added css and html for contact section and form
-- Added css and adjusted html markup for the footer 
-- Completed light mode css - now onto dark mode 
-- Added to css colors in root and adjusted page colors
-- Added js light and dark mode 
-- Validated and fixed errors 
-- Refined spacing, typography, images, buttons, hover states, and the footer
-- Tested the site at 1280px and checked the browser console for errors
-- Added the lucky draw game to the js - adjusted the html and css accordingly 
-- Added the css and html style and setup for the contact form 
-- Added the js rules for validation to the form 
-- Tested everything on the page with inspector open in chrome 
-- Adjusted any issues in the code causing form errors
-- Validated the final HTML and CSS and completed browser testing in chrome
-NOTE -- I developed and tested the js features incrementally during this work session across multiple hours, I had thought I commit the changes with the description on github that said "added js for lucky draw game section" but when I commit the contact form, it was a submission for both sections. I intended to commit the js for these sections separately. However, I did not separate the completed/committed code afterward and am documenting the missed commit here. 
+- Started JS file for services switch.
+- continued css for services section. 
+- Added transition for hovering buttons.
+- Added css and updated html for the number game 'luck section'.
+- Added css and html for contact section and form.
+- Added css and adjusted html markup for the footer. 
+- Completed light mode css - now onto dark mode.
+- Added to css colors in root and adjusted page colors.
+- Added js light and dark mode.
+- Validated and fixed errors.
+- Refined spacing, typography, images, buttons, hover states, and the footer. These were based on the orifinal figma but adjusted because looked odd at scale on computer. 
+- Tested the site at 1280px and checked the browser console for errors.
+- Added the lucky draw game to the js - adjusted the html markup and css styles accordingly. 
+- Added the css and html style and setup for the contact form, Added the js rules for validation to the form. 
+- Tested everything on the page with inspector open in chrome. 
+- Adjusted any issues in the code causing form errors.
+- Validated the final HTML and CSS and completed browser testing in chrome.
+- NOTE -- I developed and tested the js features incrementally during this work session across multiple hours, I had thought I commit the changes with the description on github that said "added js for lucky draw game section" but when I commit the contact form, it was a submission for both sections. I intended to commit these sections separately, however, I did not separate the completed/committed code afterward and am documenting the missed commit here. 
+
+### Day 5
+- Revised comments for clarity, removed anything I left for myself in the code 
+- Updated small fixes like wrong line height, clear comments, and formatting 
+- Validated all the files, compared to rubric, checked in browser 
+- Compared page to wireframe and mockup to make sure nothing was missed
+- Checked rubric to ensure all parts are met 
+- Updated readme for clarity, including daily progress and AI disclosures
 
 
 ## Debugging Log
@@ -100,7 +112,7 @@ NOTE -- I developed and tested the js features incrementally during this work se
 
 
 ### Debugging Problem 2: CSS Reset Validation Errors
-- When validating CSS, I got an error for the CSS reset. At first, I thought there might be a problem with one of the reset rules. I was not sure how to fix it because it was a set reset that I didnt know if I could change.
+- When validating CSS, I got an error for the CSS reset. At first, I thought there might be a problem with one of the reset rules. I was not sure how to fix it because it was a set reset that I didn't know if I could change.
 
 ### What I tried
 - I checked reset section and compared it with the rest of my stylesheet to see if there was a connected issue that was causing the validation problem. 
