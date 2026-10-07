@@ -201,7 +201,6 @@ section{
 
 
 /* -------------------- HEADER -------------------- */
-
 header{
     padding: 0 var(--page-padding);
     background-color: var(--background-color);
@@ -267,9 +266,9 @@ header nav a{
     color: var(--ivory);
 }
 
+
+
 /* -------------------- HOME -------------------- */
-
-
 #home{
     min-height: 700px;
     padding: 70px var(--page-padding);
@@ -334,8 +333,8 @@ header nav a{
 }
 
 
-/* -------------------- ABOUT -------------------- */
 
+/* -------------------- ABOUT -------------------- */
 #about{
     padding: 70px var(--page-padding);
     background-color: var(--secondary-background);
@@ -377,7 +376,6 @@ header nav a{
 
 
 /* -------------------- SERVICES -------------------- */
-
 #services{
     padding: 70px var(--page-padding);
     background-color: var(--background-color);
@@ -477,8 +475,8 @@ header nav a{
 }
 
 
-/* -------------------- LUCKY DRAW -------------------- */
 
+/* -------------------- LUCKY DRAW -------------------- */
 #lucky-draw{
     min-height: 500px;
     padding: 70px var(--page-padding);
@@ -727,7 +725,6 @@ header nav a{
 
 
 /* -------------------- FOOTER -------------------- */
-
 footer{
     padding: 50px var(--page-padding) 30px;
     background-color: var(--charcoal);

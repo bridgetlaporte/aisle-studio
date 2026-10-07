@@ -83,7 +83,6 @@ function playLuckyDraw(e){
     // if the user num is valid, generates a random number
     if(isValid){
         let randomNumber = getRandomNumber(1, 10);
-
         userNumber.innerHTML = userGuess;
         ourNumber.innerHTML = randomNumber;
 
@@ -99,9 +98,6 @@ function playLuckyDraw(e){
 }
 
 document.getElementById("luckyForm").addEventListener("submit", playLuckyDraw);
-
-
-
 
 
 
