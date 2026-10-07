@@ -13,24 +13,26 @@ I used generative AI as part of this project. I have listed the tool, the parts 
 ChatGPT
 
 ### What I Used AI For
-
-I used ChatGPT to help review the project requirements and rubric for details, organize my project schedule for daily workload plans, and debugging. I will update this section if I use AI for additional code review, questions, or explanations of assignment details during continued development.
+- I used ChatGPT to help review the project requirements and rubric for details, organize my project schedule for daily workload plans, and debugging. 
+- I used it to help me debug parts of my code, especially for the lucky draw game and the contact form validation to understand errors and bugs. Using my textbook sections as the intiial guide, chatGPT was able to quickly discover the issues causing the bugs.
+- It also suggested small changes to my existing html and css code that better supported the js or styling issues, topical problems.  
 
 ### Parts of the Project Affected
-
-So far, AI has influenced my project schedule planning, workflow organization and generation of checklist for completion, and the interpretation of the assignment requirements. I will update this section as the project develops.
+- So far, AI has influenced my project schedule planning, workflow organization and generation of checklist for completion, and the interpretation of the assignment requirements. 
+- The main parts of the assignment affected were the 
+- The sections, content, colors, and font of the page were designed in figma and written by me. AI was used to debugged and review code for fixes.
 
 ### Amount of Final Code Influenced by AI
-
-This will be updated before final submission after the code has been written.
+- Chat influenced a limited amount of the code but made meaningful changes. Primarily for the bugs in the lucky draw, both for layout early on and the display errors as I worked on the js. It also helped to address areas of change to existing html and css to simplify js code development. 
+- The html, css, and js were of my own development, any code offered by AI was compared to class code along, textbook materials,lectures, and labs.  
 
 ### How I Tested and Verified the Work
-
-I will test the site in the chrome browser using the dev tools, manually test each interactive feature, and validate the HTML and CSS. I will update this section with additional testing and verification performed throughout the development.
+- I tested the site in the chrome browser using the dev tools, manually tested each interactive feature and button for the game, switch, and form. W3 was used to validate the HTML and CSS. 
+- Each feature was tested separately in chrome and checked for errors. 
 
 ### Changes and Revisions I Made
-
-This section will be updated throughout development to document changes I made after receiving AI assistance. The code will be written by me, but any assistance or debugging offered by AI will be logged here. 
+- After receiving suggested solutions from ChatGPT, I reviewed the code against my own, the course materials, and the rubric before adding the changes to my code. 
+- I also made sure I understood the code from the class materials as well as suggestions from AI as I coded the project to make sure I understood the importance of each part of the js, explaining how I understand its importance and function in the code. 
 
 
 
@@ -74,6 +76,11 @@ This section will be updated throughout development to document changes I made a
 - Added the lucky draw game to the js - adjusted the html and css accordingly 
 - Added the css and html style and setup for the contact form 
 - Added the js rules for validation to the form 
+- Tested everything on the page with inspector open in chrome 
+- Adjusted any issues in the code causing form errors
+- Validated the final HTML and CSS and completed browser testing in chrome
+NOTE -- I developed and tested the js features incrementally during this work session across multiple hours, I had thought I commit the changes with the description on github that said "added js for lucky draw game section" but when I commit the contact form, it was a submission for both sections. I intended to commit the js for these sections separately. However, I did not separate the completed/committed code afterward and am documenting the missed commit here. 
+
 
 ## Debugging Log
 
@@ -86,9 +93,8 @@ This section will be updated throughout development to document changes I made a
 ### What fixed it
 - I inspected the HTML with a W3 check and found that the lucky-content div was closed immediately after it opened and there for not processing. This left the heading and paragraphs outside of the wrapper. I deleted the extra closing div.
 
-### WhaT I learned  
+### What I learned  
 - Sometimes a layout that appears to be a CSS problem can be caused by the HTML, it is worth checking both before playing with the css.
-
 
 
 
@@ -104,3 +110,22 @@ This section will be updated throughout development to document changes I made a
 
 ### WhaT I learned  
 - I learned validation errors can sometimes point to an area of the stylesheet without the CSS rule itself being the problem. 
+
+
+
+
+
+### Debugging Problem 3: Lucky Draw Display Errors
+- While reviewing the Lucky Draw section, the result area would show before the user had actually submit the guess. 
+
+### What I tried
+- I checked the js first because it was supposed to hide the results while validating the guess. It was already adding the hidden class before validation and removing it after a valid game, so I compared it with the html.
+
+### What fixed it
+- I found that the results container did not have the hidden class when the page loaded. I then added hidden to the gameOutput element in the html file so the results start as hidden and are only display after a valid guess. 
+
+### What I learned  
+- I learned that js that hides and shows also needs the html code to begin in the correct state for it to work. 
+
+### Did I use AI for this problem? 
+- I used Chat GPT to figure out why the output was visible before the game started. I checked the HTML and js myself and could not identify the issue. I asked chat to explain what was causing it, then reviewed its answer and made the change to the starting html class which fixed the problem. 

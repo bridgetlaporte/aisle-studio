@@ -16,7 +16,7 @@ function showService(serviceId){
 // The buttons all have a value to match their corresponding service. When clicked, the button displays its service and updates to be the active button.
 for (let i = 0; i < serviceButtons.length; i++) {
     serviceButtons[i].addEventListener("click", function(event){
-        
+
         let selectedService = event.target.getAttribute("data-service");
         showService(selectedService);
 
@@ -42,7 +42,6 @@ themeToggle.addEventListener("click", function(){
         themeToggle.textContent = "Dark Mode";
     }
 });
-
 
 
 
@@ -100,11 +99,6 @@ function playLuckyDraw(e){
 }
 
 document.getElementById("luckyForm").addEventListener("submit", playLuckyDraw);
-
-
-
-
-
 
 
 
