@@ -30,8 +30,8 @@ for (let i = 0; i < serviceButtons.length; i++) {
 
 
 // -------------------- DARK MODE -------------------- 
-// toggles the dark mode class on the body so css can adjust colors
-// the text changes to the current mode so the user knows what mode they will switch to when they click it
+// Toggles the dark mode class on the body so css can adjust colors
+// The text changes to the current mode so the user knows what they will switch to when they click it
 let themeToggle = document.getElementById("themeToggle");
 themeToggle.addEventListener("click", function(){
     document.body.classList.toggle("dark-mode");
@@ -194,13 +194,14 @@ function validateContact(e){
         // sets the preferred contact method and the value to display based on what the user selected
         if(contactEmail.checked){
             preferredMethod = "Email";
-            preferredContact = emailInput.value;
+            // preferredContact = emailInput.value; - not needed for the change in display but could use if only displaying the preferred method
         }else{
             preferredMethod = "Phone";
-            preferredContact = phoneInput.value;
+            // preferredContact = phoneInput.value; - not needed for the change in display but could use if only displaying the preferred method
         }
 
         // creates a customer object with the validated information - this is displayed to the user in the contactOutput section of the page, displays all contact info they provided
+        // not sure if the email and phone values are both needed for display or just the preferred, included both anyways
         let customer = {
             name: fullNameInput.value,
             email: emailInput.value,
