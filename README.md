@@ -71,17 +71,36 @@ This section will be updated throughout development to document changes I made a
 - Validated and fixed errors 
 - Refined spacing, typography, images, buttons, hover states, and the footer
 - Tested the site at 1280px and checked the browser console for errors
+- Added the lucky draw game to the js - adjusted the html and css accordingly 
+- Added the css and html style and setup for the contact form 
+- Added the js rules for validation to the form 
 
 ## Debugging Log
 
-### Debugging Problem 1: Lucky Draw Grid Layout
+### Debugging Problem 1: Lucky Draw Layout
 - The Lucky Draw heading, description, and form were appearing wrong despite my column setup seeming correct.
 
 ### What I tried
-- I first adjusted the CSS Grid layout and spacing, but the page continued to display incorrectly. 
+- I first adjusted the CSS grid layout and spacing, but the page continued to display incorrectly. 
 
 ### What fixed it
 - I inspected the HTML with a W3 check and found that the lucky-content div was closed immediately after it opened and there for not processing. This left the heading and paragraphs outside of the wrapper. I deleted the extra closing div.
 
 ### WhaT I learned  
 - Sometimes a layout that appears to be a CSS problem can be caused by the HTML, it is worth checking both before playing with the css.
+
+
+
+
+
+### Debugging Problem 2: CSS Reset Validation Errors
+- When validating CSS, I got an error for the CSS reset. At first, I thought there might be a problem with one of the reset rules. I was not sure how to fix it because it was a set reset that I didnt know if I could change.
+
+### What I tried
+- I checked reset section and compared it with the rest of my stylesheet to see if there was a connected issue that was causing the validation problem. 
+
+### What fixed it
+- I found that the issue was coming from the comments for the CSS reset where I give credit to the creator. This was an error of spelling not the code itself, it could not detect what word the last name was supposed to be. This was a spelling error rather than the actual styles code issue. 
+
+### WhaT I learned  
+- I learned validation errors can sometimes point to an area of the stylesheet without the CSS rule itself being the problem. 
