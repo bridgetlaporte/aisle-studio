@@ -204,18 +204,20 @@ function validateContact(e){
             preferredContact = phoneInput.value;
         }
 
-        // creates a customer object with the validated information - this is displayed to the user in the contactOutput section of the page
+        // creates a customer object with the validated information - this is displayed to the user in the contactOutput section of the page, displays all contact info they provided
         let customer = {
             name: fullNameInput.value,
+            email: emailInput.value,
+            phone: phoneInput.value,
             contactMethod: preferredMethod,
-            contactInfo: preferredContact,
             comments: commentsInput.value
         };
 
         contactOutput.innerHTML =
             `<strong>Name:</strong> ${customer.name}<br>
             <strong>Preferred Contact:</strong> ${customer.contactMethod}<br>
-            <strong>${customer.contactMethod}:</strong> ${customer.contactInfo}<br>
+            <strong>Email:</strong> ${customer.email}<br>
+            <strong>Phone:</strong> ${customer.phone}<br>
             <strong>Wedding Details:</strong> ${customer.comments}`;
 
         contactSuccess.classList.remove("hidden");
